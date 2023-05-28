@@ -3,9 +3,9 @@ import React from 'react'
 const Home = () => {
   return (
     <div>
-          <h1>Welcome To Home</h1>
+          <h3>Welcome To Home</h3>
         <br/>
-        <h3>Otp Verification successfull !...</h3>
+        <h5>OTP Verification successfull !...</h5>
 
     </div>
   )

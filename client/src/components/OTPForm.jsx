@@ -13,7 +13,7 @@ const OTPForm = () => {
   
       try {
     
-        const response = await axios.post('', { email });
+        const response = await axios.post('http://localhost:5001/api/v1/create', { email });
         console.log(response.data);
          
        
@@ -33,7 +33,7 @@ const OTPForm = () => {
   return (
     <div>
          <form onSubmit={handleSubmit}>
-      <label htmlFor="email">Email:</label>
+      <label htmlFor="email">Enter Your Email:</label>
       <input
         type="email"
         id="email"
@@ -42,7 +42,7 @@ const OTPForm = () => {
         required
       />
 
-      <button type="submit">Send OTP</button>
+      <button type="submit" className='btn btn-outline-primary'>Send OTP</button>
 
       {successMessage && <p>{successMessage}</p>}
       {errorMessage && <p>{errorMessage}</p>}

@@ -7,15 +7,18 @@ div{
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-top: 5%;
+  
 }
 form {
   width: 300px;
   height: 300px;
-  background-color: antiquewhite;
+  background-color: rgb(163, 161, 161);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  
 }
 
 label,input,button {
@@ -23,8 +26,10 @@ label,input,button {
 }
 
 label {
-  color: rgb(192, 25, 25);
+  color: rgb(24, 8, 126);
   font-size: 2rem;
+  font-weight: bolder;
+  font-family: 'Times New Roman', Times, serif;
 }
 input{
   width: 200px;
@@ -32,30 +37,33 @@ input{
 
 }
 
-button{
+/* button{
   background-color: rgb(27, 211, 21); ;
-}
+} */
 
-button:hover{
+/* button:hover{
   background-color: rgb(154, 211, 21); 
   cursor: pointer;
-}
+} */
 
 p{
   color:rgb(211, 21, 21);  
 }
 
-h1{
+h3{
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 5rem;
+  font-size: 4rem;
+  margin-top: 100px;
   
 }
 
-h3{
-  color: rgb(21, 211, 31); 
-  font-size: 3rem;
+h5{
+  color: rgb(13, 138, 20); 
+  font-size: 2rem;
+  margin-bottom: 50px;
+  font-style: italic;
 }
 
 

@@ -1,6 +1,6 @@
 
-import { BrowserRouter, Route, Router } from 'react-router-dom';
-import './App.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import './App.css'
 import OTPForm from './components/OTPForm';
 import VerifyForm from './components/VerifyForm';
 import Home from './components/Home';
@@ -9,11 +9,11 @@ function App() {
   return (
     <div >
       <BrowserRouter>
-      <Router>
+      <Routes>
       <Route path='/' element={<OTPForm/>} />
      <Route path='/verify' element={<VerifyForm />} />
      <Route path='/home' element={<Home />} />
-      </Router>
+     </Routes>
       </BrowserRouter>
     </div>
   );

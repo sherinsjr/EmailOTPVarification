@@ -13,7 +13,7 @@ const VerifyForm = () => {
   
       try {
       
-        const response = await axios.post('', { otp });
+        const response = await axios.post('http://localhost:5001/api/v1/verifyOtp', { otp });
         console.log(response.data);
          
      
@@ -30,7 +30,7 @@ const VerifyForm = () => {
   return (
     <div>
         <form onSubmit={handleSubmit}>
-      <label htmlFor="otp">Otp:</label>
+      <label htmlFor="otp">OTP:</label>
       <input
         type="text"
         id="otp"
@@ -39,7 +39,7 @@ const VerifyForm = () => {
         required
       />
 
-      <button type="submit">Submit</button>
+      <button type="submit"  className='btn btn-outline-success'>Submit</button>
 
       {successMessage && <p>{successMessage}</p>}
       {errorMessage && <p>{errorMessage}</p>}
