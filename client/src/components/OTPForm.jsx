@@ -13,7 +13,7 @@ const OTPForm = () => {
   
       try {
     
-        const response = await axios.post('http://localhost:5001/api/v1/create', { email });
+        const response = await axios.post('https://otp-verification-mj95.onrender.com/api/v1/create', { email });
         console.log(response.data);
          
        

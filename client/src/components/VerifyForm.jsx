@@ -13,7 +13,7 @@ const VerifyForm = () => {
   
       try {
       
-        const response = await axios.post('http://localhost:5001/api/v1/verifyOtp', { otp });
+        const response = await axios.post('https://otp-verification-mj95.onrender.com/api/v1/verifyOtp', { otp });
         console.log(response.data);
          
      
